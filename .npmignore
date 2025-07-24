@@ -1,0 +1,33 @@
+# =================================================================
+# Archivos de Configuración y Desarrollo
+# =================================================================
+# No se deben publicar los archivos de configuración del proyecto.
+.gitignore
+tsconfig.json
+tsup.config.ts
+
+# =================================================================
+# Código Fuente y Pruebas
+# =================================================================
+# El paquete NPM solo debe contener el código compilado de la carpeta /dist.
+# Se excluye el código fuente y las carpetas de pruebas.
+src/
+tests/
+test/
+
+# =================================================================
+# Archivos Sensibles (¡MUY IMPORTANTE!)
+# =================================================================
+# NUNCA publicar certificados digitales privados en el paquete NPM.
+*.p12
+*.pfx
+
+# =================================================================
+# Archivos de Dependencias y Sistema Operativo
+# =================================================================
+# Los lock files no son necesarios en el paquete final.
+package-lock.json
+bun.lockb
+
+# Archivos generados por el sistema operativo.
+.DS_Store

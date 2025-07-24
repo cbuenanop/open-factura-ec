@@ -1,0 +1,99 @@
+{
+  "version": "2.1.0",
+  "infoTributaria": {
+    "ambiente": "1",
+    "tipoEmision": "1",
+    "razonSocial": "EMPRESA DE PRUEBA S.A.",
+    "nombreComercial": "PRUEBAS OPEN-FACTURA",
+    "ruc": "1790000000001",
+    "codDoc": "01",
+    "estab": "001",
+    "ptoEmi": "001",
+    "secuencial": "000000123",
+    "dirMatriz": "AV. AMAZONAS Y NACIONES UNIDAS. QUITO",
+    "agenteRetencion": "1234",
+    "contribuyenteRimpe": "CONTRIBUYENTE RÉGIMEN RIMPE"
+  },
+  "infoFactura": {
+    "fechaEmision": "23/07/2025",
+    "dirEstablecimiento": "AV. AMAZONAS Y NACIONES UNIDAS. QUITO",
+    "obligadoContabilidad": "SI",
+    "tipoIdentificacionComprador": "05",
+    "razonSocialComprador": "Juan del Pueblo",
+    "identificacionComprador": "1720000000",
+    "direccionComprador": "AV. 6 DE DICIEMBRE. QUITO",
+    "totalSinImpuestos": 110.00,
+    "totalDescuento": 5.00,
+    "totalConImpuestos": [
+      {
+        "codigo": "2",
+        "codigoPorcentaje": "4",
+        "baseImponible": 100.00,
+        "valor": 15.00
+      },
+      {
+        "codigo": "2",
+        "codigoPorcentaje": "0",
+        "baseImponible": 10.00,
+        "valor": 0.00
+      }
+    ],
+    "propina": 0.00,
+    "importeTotal": 125.00,
+    "moneda": "DOLAR",
+    "pagos": [
+      {
+        "formaPago": "01",
+        "total": 125.00
+      }
+    ]
+  },
+  "detalles": [
+    {
+      "codigoPrincipal": "PROD-001",
+      "descripcion": "Servicio de Consultoría de Software",
+      "cantidad": 1,
+      "precioUnitario": 105.00,
+      "descuento": 5.00,
+      "precioTotalSinImpuesto": 100.00,
+      "impuestos": [
+        {
+          "codigo": "2",
+          "codigoPorcentaje": "4",
+          "tarifa": 15,
+          "baseImponible": 100.00,
+          "valor": 15.00
+        }
+      ]
+    },
+    {
+      "codigoPrincipal": "PROD-002",
+      "descripcion": "Producto con tarifa IVA 0%",
+      "cantidad": 1,
+      "precioUnitario": 10.00,
+      "descuento": 0.00,
+      "precioTotalSinImpuesto": 10.00,
+      "impuestos": [
+        {
+          "codigo": "2",
+          "codigoPorcentaje": "0",
+          "tarifa": 0,
+          "baseImponible": 10.00,
+          "valor": 0.00
+        }
+      ]
+    }
+  ],
+  "infoAdicional": {
+    "campos": [
+      {
+        "nombre": "Email",
+        "valor": "cliente@email.com"
+      },
+      {
+        "nombre": "Observaciones",
+        "valor": "Factura de prueba integral"
+      }
+    ]
+  }
+}

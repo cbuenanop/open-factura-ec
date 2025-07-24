@@ -1,0 +1,60 @@
+{
+  "name": "open-factura-ec",
+  "version": "1.0.0",
+  "description": "Librería Node.js para facturación electrónica en Ecuador: generación, firma digital XAdES-BES y envío de comprobantes electrónicos válidos ante el SRI (compatible ficha técnica 2.31)",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "start": "npm run build -- --watch",
+    "test": "npm run build && node tests/main.js",
+    "test:ts": "npm run build && ts-node tests/main.ts"
+  },
+  "keywords": [
+    "facturación electrónica",
+    "ecuador",
+    "SRI",
+    "XAdES-BES",
+    "firma digital",
+    "comprobantes electrónicos",
+    "xml",
+    "nodejs"
+  ],
+  "author": "Open Factura EC Team",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tuusuario/open-factura-ec.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@peculiar/webcrypto": "^1.5.0",
+    "@peculiar/x509": "^1.13.0",
+    "axios": "^1.7.2",
+    "xadesjs": "^2.4.4",
+    "xmlbuilder2": "^3.1.1",
+    "xmldom": "^0.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "@types/node-forge": "^1.3.13",
+    "@types/xmldom": "^0.1.34",
+    "node-forge": "^1.3.1",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

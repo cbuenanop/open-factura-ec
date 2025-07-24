@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<factura id="comprobante" version="2.1.0">
+  <infoTributaria>
+    <ambiente>1</ambiente>
+    <tipoEmision>1</tipoEmision>
+    <razonSocial>EMPRESA DE PRUEBA S.A.</razonSocial>
+    <nombreComercial>PRUEBAS OPEN-FACTURA</nombreComercial>
+    <ruc>0602416612001</ruc>
+    <claveAcceso>2307202501060241661200110010010000001231234567813</claveAcceso>
+    <codDoc>01</codDoc>
+    <estab>001</estab>
+    <ptoEmi>001</ptoEmi>
+    <secuencial>000000123</secuencial>
+    <dirMatriz>AV. AMAZONAS Y NACIONES UNIDAS. QUITO</dirMatriz>
+    <contribuyenteRimpe>CONTRIBUYENTE RÉGIMEN RIMPE</contribuyenteRimpe>
+  </infoTributaria>
+  <infoFactura>
+    <fechaEmision>23/07/2025</fechaEmision>
+    <dirEstablecimiento>AV. AMAZONAS Y NACIONES UNIDAS. QUITO</dirEstablecimiento>
+    <obligadoContabilidad>SI</obligadoContabilidad>
+    <tipoIdentificacionComprador>05</tipoIdentificacionComprador>
+    <razonSocialComprador>Juan del Pueblo</razonSocialComprador>
+    <identificacionComprador>0602045759</identificacionComprador>
+    <direccionComprador>AV. 6 DE DICIEMBRE. QUITO</direccionComprador>
+    <totalSinImpuestos>110.00</totalSinImpuestos>
+    <totalDescuento>5.00</totalDescuento>
+    <totalConImpuestos>
+      <totalImpuesto>
+        <codigo>2</codigo>
+        <codigoPorcentaje>4</codigoPorcentaje>
+        <baseImponible>100.00</baseImponible>
+        <valor>15.00</valor>
+      </totalImpuesto>
+      <totalImpuesto>
+        <codigo>2</codigo>
+        <codigoPorcentaje>0</codigoPorcentaje>
+        <baseImponible>10.00</baseImponible>
+        <valor>0.00</valor>
+      </totalImpuesto>
+    </totalConImpuestos>
+    <propina>0.00</propina>
+    <importeTotal>125.00</importeTotal>
+    <moneda>DOLAR</moneda>
+    <pagos>
+      <pago>
+        <formaPago>01</formaPago>
+        <total>125.00</total>
+      </pago>
+    </pagos>
+  </infoFactura>
+  <detalles>
+    <detalle>
+      <codigoPrincipal>PROD-001</codigoPrincipal>
+      <descripcion>Servicio de Consultoría de Software</descripcion>
+      <cantidad>1.000000</cantidad>
+      <precioUnitario>105.000000</precioUnitario>
+      <descuento>5.00</descuento>
+      <precioTotalSinImpuesto>100.00</precioTotalSinImpuesto>
+      <impuestos>
+        <impuesto>
+          <codigo>2</codigo>
+          <codigoPorcentaje>4</codigoPorcentaje>
+          <tarifa>15</tarifa>
+          <baseImponible>100.00</baseImponible>
+          <valor>15.00</valor>
+        </impuesto>
+      </impuestos>
+    </detalle>
+    <detalle>
+      <codigoPrincipal>PROD-002</codigoPrincipal>
+      <descripcion>Producto con tarifa IVA 0%</descripcion>
+      <cantidad>1.000000</cantidad>
+      <precioUnitario>10.000000</precioUnitario>
+      <descuento>0.00</descuento>
+      <precioTotalSinImpuesto>10.00</precioTotalSinImpuesto>
+      <impuestos>
+        <impuesto>
+          <codigo>2</codigo>
+          <codigoPorcentaje>0</codigoPorcentaje>
+          <tarifa>0</tarifa>
+          <baseImponible>10.00</baseImponible>
+          <valor>0.00</valor>
+        </impuesto>
+      </impuestos>
+    </detalle>
+  </detalles>
+  <infoAdicional>
+    <campoAdicional nombre="Email">cliente@email.com</campoAdicional>
+    <campoAdicional nombre="Observaciones">Factura de prueba integral</campoAdicional>
+  </infoAdicional>
+</factura>

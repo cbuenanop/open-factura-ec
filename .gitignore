@@ -1,0 +1,76 @@
+# =================================================================
+# Archivos de Dependencias y Caches
+# =================================================================
+# Directorio principal de dependencias de Node.js
+node_modules/
+
+# Archivos de caché de diferentes herramientas
+.npm
+.eslintcache
+*.tsbuildinfo
+
+# =================================================================
+# Archivos Compilados y de Salida (Build)
+# =================================================================
+# Directorios de salida de compilación
+dist/
+public/
+
+# Salida de empaquetado de npm
+*.tgz
+
+# Reportes de cobertura de pruebas
+coverage/
+.nyc_output
+
+# =================================================================
+# Logs y Archivos de Diagnóstico
+# =================================================================
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+report.*.json
+
+# =================================================================
+# Archivos Sensibles y de Entorno
+# =================================================================
+# Archivos de variables de entorno
+.env
+.env.local
+.env.*.local
+
+# Certificados digitales (¡MUY IMPORTANTE!)
+# Nunca subir certificados privados a un repositorio.
+*.p12
+*.pfx
+
+# =================================================================
+# Archivos de Configuración de IDEs y Editores
+# =================================================================
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# JetBrains (WebStorm, etc.)
+.idea/
+
+# =================================================================
+# Archivos de Sistema Operativo
+# =================================================================
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# =================================================================
+# Lock Files de Otros Gestores (Estandarizamos en npm)
+# =================================================================
+bun.lockb
+yarn.lock
+pnpm-lock.yaml

@@ -10,10 +10,15 @@ Librería para la generación, firma digital y envío de comprobantes electróni
 - Comunicación con los servicios de recepción y autorización del SRI
 - Pruebas automáticas de extremo a extremo
 
-## Instalación
+---
+
+## 📦 Instalación
 
 ```bash
 npm install open-factura-ec
+```
+
+---
 
 ## Requisitos
 - Node.js >= 16
